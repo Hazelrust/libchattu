@@ -5,9 +5,15 @@
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
-		"start": "wrangler dev"
+		"start": "wrangler dev",
+		"test": "vitest",
+		"test:watch": "vitest --watch"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20250708.0",
+		"@vitest/coverage-v8": "^3.2.4",
+		"dotenv": "^17.1.0",
+		"vitest": "^3.2.4",
 		"wrangler": "^4.23.0"
 	}
 }
