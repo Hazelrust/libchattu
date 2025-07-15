@@ -15,9 +15,9 @@ export function buildSearchParams(query, urlSearchParams) {
       expander: 'relatedsubjects',
       sort: 'relevance',
       includefacets: 'n',
-      searchmode: 'smart',
+      searchmode: 'all',
       view: 'detailed',
-      resultsperpage: '5',
+      resultsperpage: '10',
       pagenumber: '1',
       highlight: 'y'
     };
