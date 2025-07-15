@@ -9,13 +9,8 @@
  */
 
 
-<<<<<<< HEAD
 import { handleSearch } from './handlers/search.js'
 import { handlePublication } from './handlers/publication.js';
-=======
-import { handleSearch } from 'handlers/search.js'
-import { handlePublication } from 'handlers/publication.js';
->>>>>>> 2326bf71a2ed0b0c0effdf1fd30e5aa6572a3dca
 
 export default {
   async fetch(request, env, ctx) {
