@@ -9,8 +9,8 @@
  */
 
 
-import { handleSearch } from 'handlers/search.js'
-import { handlePublication } from 'handlers/publication.js';
+import { handleSearch } from './handlers/search.js'
+import { handlePublication } from './handlers/publication.js';
 
 export default {
   async fetch(request, env, ctx) {

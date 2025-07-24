@@ -2,9 +2,9 @@
 export async function getEBSCOTokens(env) {
     // Get credentials from KV store
     const [userID, password, profile] = await Promise.all([
-      env.KV.get('EBSCO_USER'),
-      env.KV.get('EBSCO_PASS'),
-      env.KV.get('EBSCO_PROFILE')
+      env.KV.get('EBSCO_USER') || env.EBSCO_USER,
+      env.KV.get('EBSCO_PASS') || env.EBSCO_PASS,
+      env.KV.get('EBSCO_PROFILE') || env.EBSCO_PROFILE
     ]);
   
     if (!userID || !password || !profile) {
